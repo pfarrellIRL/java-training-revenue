@@ -1,17 +1,12 @@
 /*
 package com.accenture.tagtrainingspring.screening;
-
 import org.springframework.jdbc.core.RowMapper;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 public class ScreeningRowMapper implements RowMapper<Screening> {
-
     @Override
     public Screening mapRow(ResultSet resultSet, int i) throws SQLException {
         Screening screening = new Screening();
-
         screening.setId(resultSet.getInt("id"));
         screening.setDiagnosis(resultSet.getString("diagnosis").charAt(0));
         screening.setRadiusMean(resultSet.getDouble("radius_mean"));
@@ -45,10 +40,7 @@ public class ScreeningRowMapper implements RowMapper<Screening> {
         screening.setSymmetryWorst(resultSet.getDouble("symmetry_worst"));
         screening.setFractalDimensionWorst(resultSet.getDouble("fractal_dimension_worst"));
         screening.setGroupId(resultSet.getString("group_id").charAt(0));
-
         return screening;
     }
-
 }
-
- */
+*/
